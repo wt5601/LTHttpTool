@@ -62,10 +62,10 @@
 		89E22560D742FFF585904EF1 /* Pods-LTHttpTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTHttpTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-LTHttpTool_Example/Pods-LTHttpTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		981A67CA04B681735C590F8B /* Pods_LTHttpTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTHttpTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B502B9062702A0536D02264 /* Pods-LTHttpTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTHttpTool_Example.release.xcconfig"; path = "Target Support Files/Pods-LTHttpTool_Example/Pods-LTHttpTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C5FC5A1CB9085F44D20225C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C7D5213F70E6C3F183AE8513 /* LTHttpTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LTHttpTool.podspec; path = ../LTHttpTool.podspec; sourceTree = "<group>"; };
+		C5FC5A1CB9085F44D20225C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C7D5213F70E6C3F183AE8513 /* LTHttpTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LTHttpTool.podspec; path = ../LTHttpTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D03A60228985707CE1B0F90F /* Pods-LTHttpTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTHttpTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LTHttpTool_Tests/Pods-LTHttpTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EAB5DF01EB4D1DFAE5FE4C73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EAB5DF01EB4D1DFAE5FE4C73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FD9180C5ED19BA908B0DB8DA /* Pods_LTHttpTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTHttpTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				D03A60228985707CE1B0F90F /* Pods-LTHttpTool_Tests.debug.xcconfig */,
 				802A802D8D5CFDFAC96677FB /* Pods-LTHttpTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LTHttpTool_Example/Pods-LTHttpTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LTHttpTool/LTHttpTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTHttpTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

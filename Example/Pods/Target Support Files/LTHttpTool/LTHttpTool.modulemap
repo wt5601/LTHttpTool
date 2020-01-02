@@ -1,0 +1,6 @@
+framework module LTHttpTool {
+  umbrella header "LTHttpTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
