@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LTHttpTool_Example' do
+  pod 'LTHttpTool', :path => '../'
+
+  target 'LTHttpTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
